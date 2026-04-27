@@ -15,6 +15,7 @@ public class Lancamento {
     private BigDecimal valor;
     private LocalDate data = LocalDate.now();
 
+    @Column(columnDefinition = "varchar(255)")
     @Enumerated(EnumType.STRING)
     private TipoLancamento tipo;
 
